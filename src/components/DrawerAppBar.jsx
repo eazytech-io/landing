@@ -77,12 +77,12 @@ function DrawerAppBar(props) {
                         </Box>
                     </Box>
                     <Link
-                        to="contact" // Use the ID of the "Contact Us" section
+                        to="contact" 
                         smooth={true}
                         duration={500}
                         offset={-70}
                     >
-                        <Button> Contact Us</Button>
+                        <Button sx={{backgroundColor: "#81B6FF", color: "white", textDecoration: "none"}}> Contact Us</Button>
                     </Link>
                 </Toolbar>
             </AppBar>
