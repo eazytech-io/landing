@@ -18,6 +18,15 @@ import Logo from '../assets/images/eztech.png'
 
 const drawerWidth = 240;
 const navItems = ['About', 'Services', 'Projects'];
+const boxSX = {
+    backgroundColor: "#81B6FF",
+    color: "white",
+    textDecoration: "none",
+    textTransform: "none",
+    "&:hover": {
+        background: "black"
+    },
+};
 
 function DrawerAppBar(props) {
     const { window } = props;
@@ -31,7 +40,7 @@ function DrawerAppBar(props) {
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <img className='w-[15%] self-center align-middle justify-center m-auto pt-5 pb-5' src={Logo} alt="" />
             <Divider />
-            <List className='w-[90%]'>
+            <List >
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center', width: "30%" }}>
@@ -77,12 +86,12 @@ function DrawerAppBar(props) {
                         </Box>
                     </Box>
                     <Link
-                        to="contact" 
+                        to="contact"
                         smooth={true}
                         duration={500}
                         offset={-70}
                     >
-                        <Button sx={{backgroundColor: "#81B6FF", color: "white", textDecoration: "none"}}> Contact Us</Button>
+                        <Button sx={boxSX}> Contact Us</Button>
                     </Link>
                 </Toolbar>
             </AppBar>
