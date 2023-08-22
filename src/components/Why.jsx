@@ -5,7 +5,7 @@ import Line from '../assets/images/line.svg'
 
 const Why = () => {
     return (
-        <div className='flex flex-col bg-[#F5F9FF] w-[85%] m-auto rounded-3xl pb-10 mb-10 p-10'>
+        <div id='about' className='flex flex-col bg-[#F5F9FF] w-[85%] m-auto rounded-3xl pb-10 mb-10 p-10'>
             <h1 className='text-3xl md:text-5xl font-black'>Why <span className='text-[#81B6FF]'> EzTech</span> Is Your Best Choice <br></br>
                 For Software Development
             </h1>

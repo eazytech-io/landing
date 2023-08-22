@@ -12,12 +12,12 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import { Link } from 'react-scroll';
 import Button from '@mui/material/Button';
 import Logo from '../assets/images/eztech.png'
 
 const drawerWidth = 240;
-const navItems = ['About', 'Services', 'Portfolio'];
+const navItems = ['About', 'Services', 'Projects'];
 
 function DrawerAppBar(props) {
     const { window } = props;
@@ -31,10 +31,10 @@ function DrawerAppBar(props) {
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <img className='w-[15%] self-center align-middle justify-center m-auto pt-5 pb-5' src={Logo} alt="" />
             <Divider />
-            <List>
+            <List className='w-[90%]'>
                 {navItems.map((item) => (
                     <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton sx={{ textAlign: 'center', width: "30%" }}>
                             <ListItemText primary={item} />
                         </ListItemButton>
                     </ListItem>
@@ -62,14 +62,28 @@ function DrawerAppBar(props) {
                         <img className='w-[6%] self-center align-middle justify-center hidden md:block' src={Logo} alt="" />
                         <Box className="self-center" sx={{ display: { xs: 'none', sm: 'block' } }}>
                             {navItems.map((item) => (
-                                <Button key={item} sx={{ color: '#000' }}>
-                                    {item}
-                                </Button>
+                                <Link
+                                    key={item}
+                                    to={item.toLowerCase()} // Use lowercase item name as the ID for the target element
+                                    smooth={true} // Enable smooth scrolling
+                                    duration={500} // Scroll duration in milliseconds
+                                    offset={-70} // Offset from the top to adjust scrolling position
+                                >
+                                    <Button sx={{ color: '#000', mx: "20px" }}>
+                                        {item}
+                                    </Button>
+                                </Link>
                             ))}
                         </Box>
                     </Box>
-
-                    <Button> Contact Us</Button>
+                    <Link
+                        to="contact" // Use the ID of the "Contact Us" section
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                    >
+                        <Button> Contact Us</Button>
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Box component="nav">
@@ -89,6 +103,7 @@ function DrawerAppBar(props) {
                     {drawer}
                 </Drawer>
             </Box>
+
 
         </Box>
     );

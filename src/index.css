@@ -33,7 +33,8 @@ code {
   padding-right: 20px !important;
 }
 
-.css-5poeop{
-  background-color: transparent;
-  box-shadow: none;
+.css-5poeop {
+  margin-top: 15px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }

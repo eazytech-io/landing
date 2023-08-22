@@ -18,9 +18,9 @@ const Stats = () => {
             <div className='w-[20%] md:self-center'>
                 <div className='w-[300px] h-[300px] rounded-full bg-[#F5FAFF] flex justify-center'>
                     <div className='flex justify-center flex-col '>
-                        <h1 className='text-5xl font-bold text-[#81B6FF]'>5+</h1>
-                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>Years & Counting Of
-                            Quality Design
+                        <h1 className='text-5xl font-bold text-[#81B6FF]'>3</h1>
+                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>Successfully launched
+                            Project Last Month
                         </p>
                     </div>
                 </div>
@@ -28,9 +28,9 @@ const Stats = () => {
             <div className='w-[20%] md:self-end'>
                 <div className='w-[300px] h-[300px] rounded-full bg-[#F5FAFF] flex justify-center'>
                     <div className='flex justify-center flex-col '>
-                        <h1 className='text-5xl font-bold text-[#81B6FF]'>5+</h1>
-                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>Years & Counting Of
-                            Quality Design
+                        <h1 className='text-5xl font-bold text-[#81B6FF]'>50+</h1>
+                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>Number of Businesses
+                            Helped To Date
                         </p>
                     </div>
                 </div>
@@ -38,9 +38,9 @@ const Stats = () => {
             <div className='w-[20%] md:self-center'>
                 <div className='w-[300px] h-[300px] rounded-full bg-[#F5FAFF] flex justify-center'>
                     <div className='flex justify-center flex-col '>
-                        <h1 className='text-5xl font-bold text-[#81B6FF]'>5+</h1>
-                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>Years & Counting Of
-                            Quality Design
+                        <h1 className='text-5xl font-bold text-[#81B6FF]'>4.8</h1>
+                        <p className='w-[60%] text-center self-center mt-4 text-[#888888]'>The rating we have
+                            received so far
                         </p>
                     </div>
                 </div>
