@@ -2,7 +2,6 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
@@ -42,11 +41,20 @@ function DrawerAppBar(props) {
             <Divider />
             <List >
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{ textAlign: 'center', width: "30%" }}>
-                            <ListItemText primary={item} />
-                        </ListItemButton>
-                    </ListItem>
+                    <Link
+                        onClick={handleDrawerToggle}
+                        key={item}
+                        to={item.toLowerCase()} // Use lowercase item name as the ID for the target element
+                        smooth={true} // Enable smooth scrolling
+                        duration={500} // Scroll duration in milliseconds
+                        offset={-70} // Offset from the top to adjust scrolling position
+                    >
+                        <ListItem key={item} disablePadding>
+                            <ListItemButton sx={{ textAlign: 'center', width: "30%" }}>
+                                <ListItemText primary={item} />
+                            </ListItemButton>
+                        </ListItem>
+                    </Link>
                 ))}
             </List>
         </Box>

@@ -1,5 +1,4 @@
 import React from 'react'
-import Project1 from '../assets/images/project1.png'
 import Rectangle from '../assets/images/Rectangle.png'
 import Rectangle2 from '../assets/images/Rectangle2.png'
 import Rectangle3 from '../assets/images/Rectangle3.png'
@@ -21,7 +20,7 @@ const Projects = () => {
             </div>
             <div className='flex flex-col self-center w-full md:w-[30%]'>
                 <div className='w-full bg-black h-[2px] mb-2'></div>
-                <h1 className='text-left font-semibold text-lg '>TEzEats Contactless
+                <h1 className='text-left font-semibold text-lg '>EazEats Contactless
                     Dinning Solution</h1>
                 <p className='text-left text-sm mb-6' >WebApp/Landing Page</p>
                 <img src={Rectangle2} alt="" />
